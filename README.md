@@ -18,12 +18,12 @@ See https://en.wikipedia.org/wiki/ISO_3166
 Data can be found in [data/]
 
 #### Information
-This repository consists of ~~six~~ four parts. Part 4 & 6 are not included because they are not relevant.
+This repository consists of all ~~six~~ four parts of the ISO 639 standard. Part 4 & 6 are not included because they are not relevant.
 
 For a detailed description, see https://en.wikipedia.org/wiki/ISO_639
 
-1. [**ISO 639-1** (Part 1): Alpha-2 codes (major languages)](part1)
-1. **ISO 639-2** (Part 2): Alpha-3 codes (practically superceded by ISO 639-3)
+1. [**ISO 639-1** (Part 1): Alpha-2 codes (major languages)](#part1)
+1. [**ISO 639-2** (Part 2): Alpha-3 codes (practically superceded by ISO 639-3)](#part2)
 1. *(WIP)* **ISO 639-3** (Part 3): Alpha-3 codes
 1. ~~**ISO 639-4** (Part 4): Implementation guidelines and general principles for language coding~~
 1. *(WIP)* **ISO 639-5** (Part 5): Alpha-3 codes for language families and groups
@@ -41,7 +41,7 @@ Unless explicitly stated, CSV files with the same name as a JSON file will conta
 #### Part 1: Alpha-2 Codes for Major languages
 <a name="part1"></a>
 
-[data/iso_639-1.json] is keyed by ISO 639-1 Alpha 2 code. Each value has:
+[./data/iso_639-1.json] is keyed by ISO 639-1 Alpha 2 code. Each value has:
 * `639-2 (string)`: A mapping to the (terminological) ISO 639-2 code
 * `639-2/B (string; optional)`: A mapping to the bibliographic ISO 639-2 code, where relevant.
 * `name (string)`: The name(s) of the language, in English.
