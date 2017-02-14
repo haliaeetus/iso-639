@@ -160,6 +160,21 @@
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Akkadian_language"
   },
+  "alb": {
+    "639-1": "sq",
+    "639-2": "sqi",
+    "639-2/B": "alb",
+    "de": [
+      "Albanisch"
+    ],
+    "en": [
+      "Albanian"
+    ],
+    "fr": [
+      "albanais"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Albanian_languages"
+  },
   "ale": {
     "639-2": "ale",
     "de": [
@@ -293,6 +308,21 @@
       "aragonais"
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Aragonese_language"
+  },
+  "arm": {
+    "639-1": "hy",
+    "639-2": "hye",
+    "639-2/B": "arm",
+    "de": [
+      "Armenisch"
+    ],
+    "en": [
+      "Armenian"
+    ],
+    "fr": [
+      "arménien"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Armenian_language"
   },
   "arn": {
     "639-2": "arn",
@@ -556,6 +586,21 @@
       "balinais"
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Balinese_language"
+  },
+  "baq": {
+    "639-1": "eu",
+    "639-2": "eus",
+    "639-2/B": "baq",
+    "de": [
+      "Baskisch"
+    ],
+    "en": [
+      "Basque"
+    ],
+    "fr": [
+      "basque"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Basque_language"
   },
   "bas": {
     "639-2": "bas",
@@ -855,6 +900,21 @@
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Bulgarian_language"
   },
+  "bur": {
+    "639-1": "my",
+    "639-2": "mya",
+    "639-2/B": "bur",
+    "de": [
+      "Birmanisch"
+    ],
+    "en": [
+      "Burmese"
+    ],
+    "fr": [
+      "birman"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Burmese_language"
+  },
   "byn": {
     "639-2": "byn",
     "de": [
@@ -1035,6 +1095,21 @@
       "djaghataï"
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Chagatai_language"
+  },
+  "chi": {
+    "639-1": "zh",
+    "639-2": "zho",
+    "639-2/B": "chi",
+    "de": [
+      "Chinesisch"
+    ],
+    "en": [
+      "Chinese"
+    ],
+    "fr": [
+      "chinois"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Chinese_language"
   },
   "chk": {
     "639-2": "chk",
@@ -1339,6 +1414,21 @@
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Welsh_language"
   },
+  "cze": {
+    "639-1": "cs",
+    "639-2": "ces",
+    "639-2/B": "cze",
+    "de": [
+      "Tschechisch"
+    ],
+    "en": [
+      "Czech"
+    ],
+    "fr": [
+      "tchèque"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Czech_language"
+  },
   "dak": {
     "639-2": "dak",
     "de": [
@@ -1539,6 +1629,23 @@
       "néerlandais moyen (ca. 1050-1350)"
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Middle_Dutch_language"
+  },
+  "dut": {
+    "639-1": "nl",
+    "639-2": "nld",
+    "639-2/B": "dut",
+    "de": [
+      "Niederländisch"
+    ],
+    "en": [
+      "Dutch",
+      "Flemish"
+    ],
+    "fr": [
+      "néerlandais",
+      "flamand"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Dutch_language"
   },
   "dyu": {
     "639-2": "dyu",
@@ -1870,6 +1977,21 @@
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/French_language"
   },
+  "fre": {
+    "639-1": "fr",
+    "639-2": "fra",
+    "639-2/B": "fre",
+    "de": [
+      "Französisch"
+    ],
+    "en": [
+      "French"
+    ],
+    "fr": [
+      "français"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/French_language"
+  },
   "frm": {
     "639-2": "frm",
     "de": [
@@ -2014,6 +2136,36 @@
       "germaniques, langues"
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Germanic_languages"
+  },
+  "geo": {
+    "639-1": "ka",
+    "639-2": "kat",
+    "639-2/B": "geo",
+    "de": [
+      "Georgisch"
+    ],
+    "en": [
+      "Georgian"
+    ],
+    "fr": [
+      "géorgien"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Georgian_language"
+  },
+  "ger": {
+    "639-1": "de",
+    "639-2": "deu",
+    "639-2/B": "ger",
+    "de": [
+      "Deutsch"
+    ],
+    "en": [
+      "German"
+    ],
+    "fr": [
+      "allemand"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/German_language"
   },
   "gez": {
     "639-2": "gez",
@@ -2190,6 +2342,21 @@
       "grec ancien (jusqu'à 1453)"
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Ancient_Greek_language"
+  },
+  "gre": {
+    "639-1": "el",
+    "639-2": "ell",
+    "639-2/B": "gre",
+    "de": [
+      "Neugriechisch"
+    ],
+    "en": [
+      "Greek, Modern (1453-)"
+    ],
+    "fr": [
+      "grec moderne (après 1453)"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Modern_Greek_language"
   },
   "grn": {
     "639-1": "gn",
@@ -2511,6 +2678,21 @@
       "igbo"
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Igbo_language"
+  },
+  "ice": {
+    "639-1": "is",
+    "639-2": "isl",
+    "639-2/B": "ice",
+    "de": [
+      "Isländisch"
+    ],
+    "en": [
+      "Icelandic"
+    ],
+    "fr": [
+      "islandais"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Icelandic_language"
   },
   "ido": {
     "639-1": "io",
@@ -3551,6 +3733,21 @@
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Lushai_language"
   },
+  "mac": {
+    "639-1": "mk",
+    "639-2": "mkd",
+    "639-2/B": "mac",
+    "de": [
+      "Makedonisch"
+    ],
+    "en": [
+      "Macedonian"
+    ],
+    "fr": [
+      "macédonien"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Macedonian_language"
+  },
   "mad": {
     "639-2": "mad",
     "de": [
@@ -3644,6 +3841,21 @@
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Manding_languages"
   },
+  "mao": {
+    "639-1": "mi",
+    "639-2": "mri",
+    "639-2/B": "mao",
+    "de": [
+      "Maori-Sprache"
+    ],
+    "en": [
+      "Maori"
+    ],
+    "fr": [
+      "maori"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Maori_language"
+  },
   "map": {
     "639-2": "map",
     "de": [
@@ -3683,6 +3895,21 @@
       "massaï"
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Masai_language"
+  },
+  "may": {
+    "639-1": "ms",
+    "639-2": "msa",
+    "639-2/B": "may",
+    "de": [
+      "Malaiisch"
+    ],
+    "en": [
+      "Malay"
+    ],
+    "fr": [
+      "malais"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Malay_language"
   },
   "mdf": {
     "639-2": "mdf",
@@ -4679,6 +4906,21 @@
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Old_Persian_language"
   },
+  "per": {
+    "639-1": "fa",
+    "639-2": "fas",
+    "639-2/B": "per",
+    "de": [
+      "Persisch"
+    ],
+    "en": [
+      "Persian"
+    ],
+    "fr": [
+      "persan"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Persian_language"
+  },
   "phi": {
     "639-2": "phi",
     "de": [
@@ -4803,18 +5045,6 @@
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Pushto_language"
   },
-  "qaa-qtz": {
-    "639-2": "qaa-qtz",
-    "de": [
-      "Reserviert für lokale Verwendung"
-    ],
-    "en": [
-      "Reserved for local use"
-    ],
-    "fr": [
-      "réservée à l'usage local"
-    ]
-  },
   "que": {
     "639-1": "qu",
     "639-2": "que",
@@ -4911,6 +5141,24 @@
     "wikiUrl": "https://en.wikipedia.org/wiki/Romany_language"
   },
   "ron": {
+    "639-1": "ro",
+    "639-2": "ron",
+    "639-2/B": "rum",
+    "de": [
+      "Rumänisch"
+    ],
+    "en": [
+      "Romanian",
+      "Moldavian",
+      "Moldovan"
+    ],
+    "fr": [
+      "roumain",
+      "moldave"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Romanian_language"
+  },
+  "rum": {
     "639-1": "ro",
     "639-2": "ron",
     "639-2/B": "rum",
@@ -5250,6 +5498,21 @@
     "wikiUrl": "https://en.wikipedia.org/wiki/Slavic_languages"
   },
   "slk": {
+    "639-1": "sk",
+    "639-2": "slk",
+    "639-2/B": "slo",
+    "de": [
+      "Slowakisch"
+    ],
+    "en": [
+      "Slovak"
+    ],
+    "fr": [
+      "slovaque"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Slovak_language"
+  },
+  "slo": {
     "639-1": "sk",
     "639-2": "slk",
     "639-2/B": "slo",
@@ -5835,6 +6098,21 @@
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Thai_language"
   },
+  "tib": {
+    "639-1": "bo",
+    "639-2": "bod",
+    "639-2/B": "tib",
+    "de": [
+      "Tibetisch"
+    ],
+    "en": [
+      "Tibetan"
+    ],
+    "fr": [
+      "tibétain"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Standard_Tibetan"
+  },
   "tig": {
     "639-2": "tig",
     "de": [
@@ -6345,6 +6623,21 @@
       "washo"
     ],
     "wikiUrl": "https://en.wikipedia.org/wiki/Washo_language"
+  },
+  "wel": {
+    "639-1": "cy",
+    "639-2": "cym",
+    "639-2/B": "wel",
+    "de": [
+      "Kymrisch"
+    ],
+    "en": [
+      "Welsh"
+    ],
+    "fr": [
+      "gallois"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Welsh_language"
   },
   "wen": {
     "639-2": "wen",

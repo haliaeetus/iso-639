@@ -11,6 +11,7 @@ See https://en.wikipedia.org/wiki/ISO_3166
   1. [Node Module](#node-module)
   1. [JSON](#json)
   1. [CSV](#csv)
+1. [Scrapers](#scrapers)
 1. [Sources](#sources)
 
 ### Overview
@@ -22,11 +23,11 @@ This repository consists of all ~~six~~ four parts of the ISO 639 standard. Part
 
 For a detailed description, see https://en.wikipedia.org/wiki/ISO_639
 
-1. [**ISO 639-1** (Part 1): Alpha-2 codes (major languages)](#part1)
-1. [**ISO 639-2** (Part 2): Alpha-3 codes (practically superceded by ISO 639-3)](#part2)
-1. *(WIP)* **ISO 639-3** (Part 3): Alpha-3 codes
-1. ~~**ISO 639-4** (Part 4): Implementation guidelines and general principles for language coding~~
-1. *(WIP)* **ISO 639-5** (Part 5): Alpha-3 codes for language families and groups
+1. [**ISO 639-1** (Part 1): Alpha-2 codes (184 major languages)](#part1)
+1. [**ISO 639-2** (Part 2): Alpha-3 codes (485 languages + 20)](#part2)
+1. *(WIP)* [**ISO 639-3** (Part 3): Alpha-3 codes (? languages)](#part3)
+1. ~~**ISO 639-4** (Part 4): N/A~~
+1. *(WIP)* [**ISO 639-5** (Part 5): Alpha-3 codes (language families and groups)](#part5)
 1. ~~**ISO 639-6** (Part 6): *withdrawn*~~
 
 #### Data & Formats
@@ -38,8 +39,10 @@ Unless explicitly stated, CSV files with the same name as a JSON file will conta
 * Array values are joined into a string. For example, see names (en/fr/de) in [Part 2](#part2).
 * Values which are marked optional for a JSON file will be treated as an empty string in the corresponding CSV file.
 
-#### Part 1: Alpha-2 Codes for Major languages
+#### Part 1: Alpha-2 Codes for Major Languages
 <a name="part1"></a>
+
+Part 1 contains two-digit alphabetical codes for 184 major languages.
 
 [data/iso_639-1.json](data/iso_639-1.json) is keyed by ISO 639-1 Alpha 2 code. Each value has:
 * `639-2 (string)`: A mapping to the (terminological) ISO 639-2 code
@@ -74,8 +77,12 @@ Unless explicitly stated, CSV files with the same name as a JSON file will conta
 }
 ```
 
-#### Part 2: Alpha-3 Codes for (more) Major languages
+#### Part 2: Alpha-3 Codes for More Languages
 <a name="part2"></a>
+
+Part 2 contains three-digit alphabetical codes for 485 major languages. There are 20 additional entries for bibliographic codes (based upon the English name for the language).
+
+Note, part 2 has been practically superceded by part 3.
 
 [data/iso_639-2.json](data/iso_639-2.json) is keyed by ISO 639-2 Alpha 3 code. Each value has:
 * `639-1 (string; optional)`: A mapping to the ISO 639-1 code, if such exists.
@@ -86,14 +93,34 @@ Unless explicitly stated, CSV files with the same name as a JSON file will conta
 * `de (Array<string>)`: The names of the language, in German.
 * `wikiUrl (string: optional)`: A link the the Wikipedia article on the language, unless the code is special (see below).
 
-** Note: ** The following special codes are:
+** Note: **
+* The following special codes are:
   * Included: mis, mul, und, zxx
   * Excluded: qaa-qtz (a range reserved for local use)
-See [https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes]
+  See [https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes]
+* The German name for `zgh` has been manually added based upon a translation from English.
+* The following errors exist in the sources:
+  * The Library of Congress page incorrectly states that there are 21 additional entries for bibliographic codes while only listing 20. (Feb 2017)
 
 ##### Example
 ```
 {
+  ...
+  "alb": {
+    "639-1": "sq",
+    "639-2": "sqi",
+    "639-2/B": "alb",
+    "de": [
+      "Albanisch"
+    ],
+    "en": [
+      "Albanian"
+    ],
+    "fr": [
+      "albanais"
+    ],
+    "wikiUrl": "https://en.wikipedia.org/wiki/Albanian_languages"
+  },
   ...
   "chu": {
     "639-1": "cu",
@@ -117,10 +144,24 @@ See [https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes]
     "wikiUrl": "https://en.wikipedia.org/wiki/Church_Slavic_language"
   },
   ...
+  "sqi": {
+    ...
+  }
+  ...
 }
 ```
 
+#### Part 3: Alpha-3 Codes for Comprehensive Coverage of Languages
 
+Part 3 contains three-digit alphabetical codes for ? major languages.
+
+#### Part 4
+
+#### Part 5: Alpha-3 Code for Language Families and Groups
+
+Part 3 contains three-digit alphabetical codes for ? major languages.
+
+#### Part 6
 
 ### Examples
 ***TODO***
@@ -129,19 +170,27 @@ See [https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes]
 ```
 npm install iso-639
 ```
-*WIP*
+
+This module is a work in progress. At present, it exposes two properties:
+* `iso_639_1`: contains the contents of [data/iso_639-1.json](data/iso_639-1.json)
+* `iso_639_2`: contains the contents of [data/iso_639-2.json](data/iso_639-2.json)
+
 ***TODO***
 
+### Scrapers
+
+Data can be re-sourced using the scripts in [scrapers/](scrapers/). Alternatively:
+```
+npm run scrape
+```
 
 ### Sources
 
-Data is sourced entirely from the following pages:
-* Part 1:
-  * https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+Data is sourced from the following webpages:
+
+* Part 1: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 * Part 2:
   * https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
   * http://www.loc.gov/standards/iso639-2/php/code_list.php
-* Part 3:
-  * (WIP)
-* Part 5:
-  * (WIP)
+* Part 3: (WIP)
+* Part 5: (WIP)

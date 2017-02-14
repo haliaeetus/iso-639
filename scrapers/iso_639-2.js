@@ -49,10 +49,6 @@ const logger = msg => data => {
   return data;
 };
 
-const parserFns = {
-  table: parseTable
-};
-
 const configs = [
   {
     id: 'wiki',
@@ -156,7 +152,10 @@ const configs = [
             };
           })(),
           selector: $elem => {
-            return $elem.find('table').first();
+            const $table = $elem.find('table').first();
+            $table.append('<tbody/>');
+            $table.children('tr').appendTo($table.find('tbody'));
+            return $table;
           },
           parseIndices: {
             '639-2': 0,
@@ -178,13 +177,32 @@ function generateISO_639_2() {
     .then(logger('Ensured output directory exists.'))
     .then(() => scrapeUtil.scrapePages(configs))
     .then(({ wiki, loc }) => {
-      return _.mapValues(loc.iso_639_2, (value, key) => {
+      // add wiki links
+      const iso_639_2 = _.mapValues(loc.iso_639_2, (value, key) => {
         const wikiValue = wiki.iso_639_2[key];
 
         value.wikiUrl = wikiValue.wikiUrl;
 
         return value;
       });
+
+      // add biblio keys
+      _.each(iso_639_2, (value, key) => {
+        const bibliographic = value['639-2/B'];
+        if (bibliographic) {
+          iso_639_2[bibliographic] = value;
+        }
+      });
+
+      delete iso_639_2['qaa-qtz'];
+
+      // analytics
+      const values = _.values(iso_639_2);
+      const bib = _.chain(iso_639_2).pickBy((v, k) => v['639-2/B'] === k).values().value().length;
+      const ter = _.chain(iso_639_2).pickBy((v, k) => v['639-2'] === k).values().value().length;
+      console.log(`${ter} languages + ${bib} bibliographic = ${values.length} entries`);
+
+      return iso_639_2;
     })
     .then(scrapeUtil.renderFiles(FORMATS, FILE_PREFIX, OUTPUT_DIR))
     .then(logger('Rendered output files.'))
