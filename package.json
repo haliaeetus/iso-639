@@ -1,6 +1,6 @@
 {
   "name": "iso-639",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ISO 639 language data in common formats (JSON, CSV).",
   "main": "index.js",
   "devDependencies": {
