@@ -1,7 +1,7 @@
 {
   "name": "iso-639",
-  "version": "0.2.0",
-  "description": "ISO 639 language data in common formats (JSON, CSV).",
+  "version": "0.2.1",
+  "description": "ISO 639 language data in JSON, CSV, & a NodeJS module.",
   "main": "index.js",
   "devDependencies": {
     "bluebird": "3.4.7",

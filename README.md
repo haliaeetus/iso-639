@@ -1,5 +1,5 @@
 # ISO 639
-ISO 639 language codes with names in English, French & German, provided in JSON & CSV or as a NodeJS module.
+ISO 639 language codes with names in English, French & German, provided in JSON, CSV, & a NodeJS module.
 
 See https://en.wikipedia.org/wiki/ISO_3166
 
