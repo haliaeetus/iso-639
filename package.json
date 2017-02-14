@@ -1,0 +1,39 @@
+{
+  "name": "iso-639",
+  "version": "0.1.0",
+  "description": "ISO 639 language data in common formats (JSON, CSV).",
+  "main": "index.js",
+  "devDependencies": {
+    "bluebird": "3.4.7",
+    "eslint": "3.15.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.9.0",
+    "fs-extra": "2.0.0",
+    "jquery": "3.1.1",
+    "jsdom": "9.10.0",
+    "json-stable-stringify": "1.0.1",
+    "json2csv": "3.7.3",
+    "lodash": "4.17.4",
+    "request": "2.79.0",
+    "request-promise": "4.1.1",
+    "scrape-util": "1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scrape": "npm run scrape:639_1 && npm run scrape:639_2",
+    "scrape:639_1": "node ./scrapers/iso_639-1.js",
+    "scrape:639_2": "node ./scrapers/iso_639-2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haliaeetus/iso-639.git"
+  },
+  "author": "Ben Martin <ben@benmartinstudios.com> (http://benmartinstudios.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haliaeetus/iso-639/issues"
+  },
+  "homepage": "https://github.com/haliaeetus/iso-639#readme"
+}
