@@ -41,7 +41,7 @@ Unless explicitly stated, CSV files with the same name as a JSON file will conta
 #### Part 1: Alpha-2 Codes for Major languages
 <a name="part1"></a>
 
-(data/iso_639-1.json)[data/iso_639-1.json] is keyed by ISO 639-1 Alpha 2 code. Each value has:
+[data/iso_639-1.json](data/iso_639-1.json) is keyed by ISO 639-1 Alpha 2 code. Each value has:
 * `639-2 (string)`: A mapping to the (terminological) ISO 639-2 code
 * `639-2/B (string; optional)`: A mapping to the bibliographic ISO 639-2 code, where relevant.
 * `name (string)`: The name(s) of the language, in English.
