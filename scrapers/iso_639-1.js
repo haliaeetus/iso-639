@@ -72,7 +72,7 @@ const configs = [
             return data;
           },
           selector: $html => {
-            return $html.find('#Partial_ISO_639_table').nextRelative('table');
+            return $html.find('#Table');
           },
           parsers: {
             name: $el => $el
